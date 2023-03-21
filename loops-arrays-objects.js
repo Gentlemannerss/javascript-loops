@@ -90,6 +90,11 @@ const NOVIEmployees = [
     {firstName: 'Mark', lastName: 'Rensen'},
 ];
 
+for (let i = 0; i < NOVIEmployees.length; i++) {
+    NOVIEmployees[i].email = NOVIEmployees[i].firstName + "." + NOVIEmployees[i].lastName + "@novi.nl"
+}
+console.log(NOVIEmployees);
+
 // Bij NOVI horen de e-mailadressen altijd in het volgende format: voornaam.achternaam@novi.nl
 // Vóór het script zie je de originele objecten,
 // Na jouw script zie je de aangepaste objecten:
@@ -102,8 +107,12 @@ const NOVIEmployees = [
 // ==========================================
 
 
-
-
+for (let i = 0; i < NOVIEmployees.length; i++) {
+    const firstName = NOVIEmployees[i].firstName.toLowerCase();
+    const lastName = NOVIEmployees[i].lastName.toLowerCase();
+    NOVIEmployees[i].email = firstName + "." + lastName + "@novi.nl";
+}
+console.log(NOVIEmployees);
 
 
 // Opdracht 2-BONUS
@@ -140,6 +149,39 @@ const students = [
     {name: 'Karima', city: 'Utrecht', zipCode: '3531', neighborhood: null},
 ];
 
+for (let i = 0; i < students.length; i++) {
+
+    switch (students[i].zipCode) {
+        case '3513':
+            students[i].neighborhood = "Pijlsweerd";
+            break;
+        case '3514':
+            students[i].neighborhood = "Vogelenbuurt"
+            break;
+        case '3512':
+            students[i].neighborhood = "Binnenstad"
+            break
+        case '3531':
+            students[i].neighborhood = "Lombok"
+            break
+        case '3572':
+            students[i].neighborhood = "Wittevrouwen"
+            break
+        case '3581':
+            students[i].neighborhood = "Oudwijk"
+            break
+        case '3583':
+            students[i].neighborhood = "Schildersbuurt"
+            break
+    }
+
+   /*
+   if (students[i].zipCode === '3513') {
+        students[i].neighborhood = "Pijlsweerd"
+        }
+    */
+}
+
 // Verwachte uitkomsten:
 // [
 //     { name: 'Mariska', city: 'Utrecht', zipCode: '3513', neighborhood: 'Pijlsweerd' },
@@ -157,5 +199,5 @@ const students = [
 // ]
 // ==========================================
 
-
+console.log(students);
 
