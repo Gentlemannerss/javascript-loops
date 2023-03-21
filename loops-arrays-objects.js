@@ -17,7 +17,9 @@ const scores = [
 // ==========================================
 
 
-
+for (let i = 0; i < scores.length; i++) {
+    console.log(scores[i].score)
+}
 
 
 // ==========================================
@@ -32,7 +34,19 @@ const scores = [
 // D
 // ==========================================
 
-
+for (let i = 0; i < scores.length; i++) {
+    if (scores[i].score < 60) {
+        console.log("F")
+    } else if (scores[i].score < 70) {
+        console.log("D")
+    } else if (scores[i].score < 80) {
+        console.log("C")
+    } else if (scores[i].score < 90) {
+        console.log("B")
+    } else {
+        console.log("A")
+    }
+}
 
 
 
@@ -50,8 +64,20 @@ const scores = [
 // ==========================================
 
 
-
-
+for (let i = 0; i < scores.length; i++) {
+    if (scores[i].score < 60) {
+        scores[i].grade = "F"
+    } else if (scores[i].score < 70) {
+        scores[i].grade = "D"
+    } else if (scores[i].score < 80) {
+        scores[i].grade = "C"
+    } else if (scores[i].score < 90) {
+        scores[i].grade = "B"
+    } else {
+        scores[i].grade = "A"
+    }
+}
+console.log(scores)
 
 // ==========================================
 // Opdracht 2
