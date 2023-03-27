@@ -114,7 +114,7 @@ for (let i = 0; i < 100; i++) {
         console.log("fizz");
     } else if (dividedByFive) {
         console.log("buzz");
-    /*} else if (i === 0) {    Mogelijkheid om de 0 uit te sluiten zo bovenaan de if statement moeten.
+    /*} else if (i === 0) {    Mogelijkheid om de 0 uit te sluiten zou bovenaan de if statement moeten.
         console.log("0")*/
     } else {
         console.log(i);
