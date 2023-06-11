@@ -12,7 +12,9 @@
 // ==========================================
 
 
-
+for (let i = 1; i < 6; i++) {
+    console.log("*".repeat(i))
+}
 
 
 // ==========================================
@@ -26,7 +28,13 @@
 // ==========================================
 
 
-
+for (let i = 0; i < 5; i++) {
+    if (i < 4) {
+        console.log("loop...")
+    } else {
+        console.log("klaar!")
+    }
+}
 
 
 // ==========================================
@@ -46,7 +54,15 @@
 // ==========================================
 
 
-
+for (let i = 0; i < 10; i++) {
+    if (i > 5) {
+        console.log(">> ", i);
+    } else if (i > 2) {
+        console.log("> ", i);
+    }else {
+        console.log(i);
+    }
+}
 
 
 // ==========================================
@@ -87,5 +103,21 @@
 // etc.
 // ==========================================
 
+for (let i = 0; i < 100; i++) {
 
+    const dividedByThree = i % 3 === 0;
+    const dividedByFive = i % 5 === 0;
+
+    if (dividedByThree && dividedByFive) {
+        console.log("fizzbuzz");
+    } else if (dividedByThree) {
+        console.log("fizz");
+    } else if (dividedByFive) {
+        console.log("buzz");
+    /*} else if (i === 0) {    Mogelijkheid om de 0 uit te sluiten zou bovenaan de if statement moeten.
+        console.log("0")*/
+    } else {
+        console.log(i);
+    }
+}
 
